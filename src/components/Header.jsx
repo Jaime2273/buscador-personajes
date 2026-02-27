@@ -20,7 +20,7 @@ function Header({ setSearchTerm }) {
         style={{ padding: '8px', fontSize: '16px', marginRight: '10px' }}
       />
       
-      <button onClick={toggleTheme} style={{ padding: '8px 16px', cursor: 'pointer' }}>
+      <button onClick={toggleTheme} style={{ padding: '8px 16px', cursor: 'pointer', width: '220px'}}>
         Cambiar a Tema {theme === 'light' ? 'Oscuro' : 'Claro'}
       </button>
     </header>
