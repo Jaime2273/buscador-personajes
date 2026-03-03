@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
-function Header({ setSearchTerm }) {
+function Header({ setSearchTerm }) { // recibe la funcion por props
   // Consumimos el contexto global
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm(e.target.value); // para capturar las teclas que pulsa el usuario
   };
 
   return (
@@ -16,10 +16,11 @@ function Header({ setSearchTerm }) {
       <input 
         type="text" 
         placeholder="Busca un personaje..." 
-        onChange={handleSearch}
+        onChange={handleSearch} // se llama a la funcion
         style={{ padding: '8px', fontSize: '16px', marginRight: '10px' }}
       />
       
+      {/* se llama a la funcion */}
       <button onClick={toggleTheme} style={{ padding: '8px 16px', cursor: 'pointer', width: '220px'}}>
         Cambiar a Tema {theme === 'light' ? 'Oscuro' : 'Claro'}
       </button>
