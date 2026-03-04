@@ -7,7 +7,7 @@ function App() {
   // Requisito: useState (estados para los personajes y la búsqueda)
   const [characters, setCharacters] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-
+  
   // Consumimos el contexto para saber si el fondo debe ser oscuro o claro
   const { theme } = useContext(ThemeContext);
 

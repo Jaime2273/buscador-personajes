@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-
+  
   return (
     // cualquier componente que esté dentro de ThemeContext, puede usar la "variable" (theme) y la funcion (toggleTheme)
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
