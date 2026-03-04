@@ -8,7 +8,7 @@ function CharacterList({ characters }) {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
       {characters.map((char) => (
-        // Requisito: Enviar datos de un componente padre a un hijo mediante props
+        // Enviar datos de un componente padre a un hijo mediante props
         <CharacterCard key={char.id} character={char} />
       ))}
     </div>
